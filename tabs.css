@@ -1,0 +1,74 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 0 100px;
+  font-family: 'Inter', sans-serif;
+  background-color: #1c1c1c;
+}
+
+:focus {
+  outline-style: dashed;
+  outline-width: 1px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.wrapper {
+  max-width: 980px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.site-title {
+  text-align: center;
+  color: #fff;
+  font-size: 3.6rem;
+}
+
+.tabs {
+  padding: 3rem 4rem;
+  border-radius: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tabs__navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+}
+
+.tabs__navigation-item {
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+
+  text-decoration: none;
+  color: #8d917a;
+  font-weight: 500;
+  transition: color 280ms ease-in-out, border-color 320ms ease-in-out;
+}
+
+.tabs__navigation-item[aria-selected='true'] {
+  color: orangered;
+  border-color: orangered;
+}
+
+.tabs__panels {
+  font-size: 1.4rem;
+  color: #fff;
+}
